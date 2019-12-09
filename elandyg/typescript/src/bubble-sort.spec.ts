@@ -1,5 +1,3 @@
-const list = [23, 4, 42, 15, 16, 8];
-
 const bubbleSort = (list: any[]) => {
   let doItAgain = false;
   const limit = list.length;
@@ -15,11 +13,12 @@ const bubbleSort = (list: any[]) => {
     }
   }
   if (doItAgain) bubbleSort(list);
-
 };
 
 describe('bubble sort', () => {
   it('should sort', () => {
+    const list = [23, 4, 42, 15, 16, 8];
+
     bubbleSort(list);
   });
 });
