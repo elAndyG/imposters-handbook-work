@@ -30,5 +30,10 @@ describe('merge sort', () => {
   it('merge sorts', () => {
     const list = [23, 4, 42, 15, 16, 8, 3];
     const result = mergeSort(list);
+    expect(() => result[0] < result[1]).toBeTruthy();
+    expect(() => result[1] < result[2]).toBeTruthy();
+    expect(() => result[2] < result[3]).toBeTruthy();
+    expect(() => result[3] < result[4]).toBeTruthy();
+    expect(() => result[4] < result[5]).toBeTruthy();
   });
 });
